@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_citrus.mk
+    $(LOCAL_DIR)/twrp_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_citrus-user \
-    omni_citrus-userdebug \
-    omni_citrus-eng
+    twrp_citrus-user \
+    twrp_citrus-userdebug \
+    twrp_citrus-eng

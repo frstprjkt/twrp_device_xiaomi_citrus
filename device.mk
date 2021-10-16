@@ -6,3 +6,6 @@
 #
 
 LOCAL_PATH := device/xiaomi/citrus
+
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true

@@ -5,6 +5,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Encryption
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.filenames_mode=aes-256-cts
+
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
+# ION
+PRODUCT_PACKAGES += \
+    libion.recovery
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 

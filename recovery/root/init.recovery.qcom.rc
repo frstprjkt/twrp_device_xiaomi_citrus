@@ -35,6 +35,13 @@ on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
     write /sys/class/udc/${ro.boot.usbcontroller}/device/../mode peripheral
 
+service unified_decrypt /system/bin/unified_decrypt.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -42,3 +49,6 @@ on fs
 on boot
     start health-hal-2-1
     setprop sys.usb.config adb
+
+on property:ro.crypto.state=encrypted
+    start unified_decrypt

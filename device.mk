@@ -7,7 +7,8 @@
 
 # Encryption
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.crypto.volume.filenames_mode=aes-256-cts
+    ro.crypto.volume.filenames_mode=aes-256-cts \
+    fbe.metadata.wrappedkey=true
 
 PRODUCT_PACKAGES += \
     qcom_decrypt \

@@ -18,5 +18,5 @@ $(call inherit-product, device/xiaomi/citrus/device.mk)
 PRODUCT_DEVICE := citrus
 PRODUCT_NAME := twrp_citrus
 PRODUCT_BRAND := POCO
-PRODUCT_MODEL := M2010J19CG
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_MODEL := POCO M3
+PRODUCT_MANUFACTURER := Xiaomi

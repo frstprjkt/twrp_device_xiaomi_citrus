@@ -1,4 +1,4 @@
-# Android device tree for POCO M2010J19CG (citrus)
+# Android device tree for POCO M3 (citrus)
 
 ```
 #
